@@ -42,7 +42,7 @@ if(!isset($_SESSION["id"])){
        foreach ($users as $r){  # $l --> line ===> is string
 
            echo "<tr> <td>$r->id</td>  <td>$r->fname</td> <td>$r->lname</td> ";
-           echo "<td> <a href='view.php?id={$r->id}'> View</a> </td>
+           echo "<td> <a href='../viewuser.php?id={$r->id}'> View</a> </td>
                    <td> <a href='../register?id={$r->id}'> Edit</a> </td>
                    <td> <a href='delete_pdo.php?id={$r->id}'> Delete</a> </td>";
            echo "</tr>";
